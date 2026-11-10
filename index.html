@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2학년 7반 김경민 홈페이지</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --background-color: #f4f7f6;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --sub-text-color: #666666;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: var(--sub-text-color);
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 8px;
+            color: var(--sub-text-color);
+        }
+
+        .card ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--sub-text-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 상단 헤더 섹션 -->
+        <header>
+            <h1>2학년 7반 김경민 홈페이지</h1>
+            <p>AI 개발자 지망생 김경민의 포트폴리오 및 활동 공간입니다.</p>
+        </header>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <main class="card-grid">
+            <section class="card">
+                <h2>프로필</h2>
+                <ul>
+                    <li><strong>소속:</strong> 선주고등학교 2학년 7반</li>
+                    <li><strong>이름:</strong> 김경민</li>
+                    <li><strong>희망 진로:</strong> 인공지능(AI) 소프트웨어 개발자</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>주요 관심 분야</h2>
+                <ul>
+                    <li>Web Front-end (HTML, CSS, JS)</li>
+                    <li>데이터 전처리 및 머신러닝 기초</li>
+                    <li>AI 동아리 프로젝트 활동</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>프로젝트 & 활동</h2>
+                <ul>
+                    <li>모둠 소개 웹페이지 제작</li>
+                    <li>웹 기반 학급/진로 포트폴리오 구현</li>
+                    <li>Timely AI 기반 프로젝트 개발</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- 하단 정보 -->
+        <footer>
+            <p>© 2026 2학년 7반 김경민. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
